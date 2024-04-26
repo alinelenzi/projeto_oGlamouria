@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/categorias.css">
+    <link rel="stylesheet" href="./styles/facilidades.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/novidades.css">
+    <link rel="stylesheet" href="./styles/preview.css">
+    <link rel="stylesheet" href="./styles/produtos.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>oGlamouria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="container__nav">
+                <a class="nav-link" href="index.html"><img class="nav-img" src="./assets/favicon.png" alt="Logo da loja oGlamouria"></a>
+                <nav>
+                    <ul> 
+                        <li><a class="nav-link" href="#">oGlamouria</a></li>
+                        <li><a class="nav-link" href="#produtos">Lançamentos</a></li>
+                        <li><a class="nav-link" href="#produtos">Promoções</a></li>
+                        <li><a class="nav-link" href="#produtos">Presentes</a></li>
+                    </ul>
+                </nav>
+                <div class="input__search">
+                    <input type="text" placeholder="Buscar" id="buscar">
+                    <i class="fa-solid fa-magnifying-glass" onclick="limparForm('buscar')"></i>
+                </div>
+                <div class="icon__user">
+                    <a href="./pages/login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="icon__bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div> 
+        </div>
+    </header>       
+    
+    <div class="slider" >
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+            <input type="radio" name="btn-radio" id="radio5">
+                    
+            <div class="slide-box primeiro" id="img">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner1.png" alt="Foto com 5 tipos de hidratantes da marca Nativa SPA"></a> 
+            </div>
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner2.png" alt="Modelo feminina segurando perfume Lily Soleil"></a>
+            </div>
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner3.png" alt="Foto lançamento de 4 produtos da linha Privée"></a>
+                </div>
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner4.png" alt="Banner de promoção da semana do beijo, leve 2 batons intense e pague 1"></a>
+            </div>
+            <div class="slide-box">
+                <a href="#"><img class="img-desktop" onclick="proximaImg()" src="./assets/banners/banner5.png" alt="Foto kit de presente de dia das mães da linha Lily"></a>
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="titulo__box">Busque por categoria:</h2>
+
+    <div class='box__categorias'>
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-perfumes.jpg" alt="Foto perfume Lily"></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Perfumaria</p></a>
+            </div>
+        </div>
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-corpo.jpg" alt="Foto produtos para o corpo e banho da linha cuide-se bem boticário"></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Corpo e Banho</p></a>
+            </div>
+        </div>
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-makes.jpg" alt="Foto de alguns pincéis de maquiagem de tamanhos diferentes um ao lado do outro com um fundo coloriado degrade"></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Makes</p></a>
+            </div>
+        </div>
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-cabelo.jpg" alt="Foto com produtos para cabelo da linha march"></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Cabelos</p></a>
+            </div>
+        </div>
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-shicare.png" alt="Fotos com produtos skincare da linha botik"></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Skincare</p></a>
+            </div>
+        </div>                
+        <div class="box__categoria">
+            <a href="#produtos"><img class="img_categoria" src="./assets/categorias/categoria-pet1.jpg" alt="Foto com dois produtos da linha Au.migos para pets "></a>
+            <div class="div__categorias__card-text">
+                <a href="#produtos"><p class="categorias__card-text">Pets</p></a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="titulo__box-produtos" id="produtos">Produtos que estão bombando:</h2>
+
+    <div class="box__produtos" >
+
+        <div class="box__produtos__card" data-name="p-1">
+            <img class="imagem-produtos" src="./assets/produtos/malbec_desodorante-colonia.png" alt="Malbec X Desodorante Colônia 100ml">
+            <div class="card-produto">
+                <h5 class="card-title">MALBEC</h5>
+                <p class="card-text">Malbec X Desodorante Colônia 100ml</p>
+                <p class="card-text preco-sem-desconto">R$ 199,90</p>
+                <p class="card-text preco-com-desconto">R$ 179,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-2">
+            <img class="imagem-produtos" src="./assets/produtos/perfume-thaty.png" alt="Thaty Desodorante Colônia 200ml">
+            <div class="card-produto">
+                <h5 class="card-title">BOTICOLLECTION</h5>
+                <p class="card-text">Thaty Desodorante Colônia 200ml</p>
+                <p class="card-text preco-sem-desconto">R$ 199.90</p>
+                <p class="card-text preco-com-desconto">R$ 184,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-3">
+            <img class="imagem-produtos" src="./assets/produtos/nativa-spa-lilac-creme-hidratante-corporal.png" alt="Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml">
+            <div class="card-produto">
+                <h5 class="card-title">Nativa SPA</h5>
+                <p class="card-text">Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml</p>
+                <p class="card-text preco-sem-desconto">R$ 82,90</p>
+                <p class="card-text preco-com-desconto">R$ 82,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-4">
+            <img class="imagem-produtos" src="./assets/produtos/cuide-se-bem-creme-hidratante-framboesa.png" alt="Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml">
+            <div class="card-produto">
+                <h5 class="card-title">CUIDE-SE BEM</h5>
+                <p class="card-text">Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml</p>
+                <p class="card-text preco-sem-desconto">R$ 69,90</p>
+                <p class="card-text preco-com-desconto">R$ 69,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-5">
+            <img class="imagem-produtos" src="./assets/produtos/glos_lab_bubbaloo.png" alt="Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml">
+            <div class="card-produto">
+                <h5 class="card-title">INTENSE</h5>
+                <p class="card-text">Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml</p>
+                <p class="card-text preco-sem-desconto">R$ 39,90</p>
+                <p class="card-text preco-com-desconto">R$ 39,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-6">
+            <img class="imagem-produtos" src="./assets/produtos/intense-pop-base-cor-160-sensorial.png" alt="Base Mate Camuflagem Cor 160 Pop! 20ml">
+            <div class="card-produto">
+                <h5 class="card-title">INTENSE</h5>
+                <p class="card-text">Base Mate Camuflagem Cor 160 Pop! 20ml</p>
+                <p class="card-text preco-sem-desconto">R$ 25,90</p>
+                <p class="card-text preco-com-desconto">R$ 25,90</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-7">
+            <img class="imagem-produtos" src="./assets/produtos/kit-maes-floratta-red.png" alt="Kit Presente Dia das Mães Red (3 itens)">
+            <div class="card-produto">
+                <h5 class="card-title">FLORATTA</h5>
+                <p class="card-text">Kit Presente Dia das Mães Red (3 itens)</p>
+                <p class="card-text preco-sem-desconto">R$ 284,70</p>
+                <p class="card-text preco-com-desconto">R$ 284,70</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+
+        <div class="box__produtos__card" data-name="p-8">
+            <img class="imagem-produtos" src="./assets/produtos/kit-maes-elysee-nuit-perfume-edp-creme-acetinado.png" alt="Combo Presente Dia das Mães Nuit  (3 itens)">
+            <div class="card-produto">
+                <h5 class="card-title">ELYSÉE</h5>
+                <p class="card-text">Combo Presente Dia das Mães Nuit  (3 itens)</p>
+                <p class="card-text preco-sem-desconto">R$ 431,70</p>
+                <p class="card-text preco-com-desconto">R$ 431,70</p>
+                <a href="#" class="btn-produto">Ver mais</a>
+            </div>         
+        </div>
+    </div>
+
+    <section class="secao__facilidades">
+        
+        <h2 class="facilidade__titulo">Conheça todas as nossas facilidades</h2>
+
+        <div class="box__facilidades">
+            <div class="box__facilidade">
+                <div><i class="verde-limao bi bi-x-diamond fs-1"></i></div>
+                <div>
+                    <div class="divs__facilidades_text verde-limao">PAGUE PELO PIX</div>
+                    <div class="divs__facilidades_text">Ganhe 5% OFF em pagamentos via PIX</div>
+                </div>
+            </div>
+            <div class="box__facilidade">
+                <div><i class="verde-limao bi bi-arrow-repeat fs-1"></i></div>
+                <div>
+                    <div class="divs__facilidades_text verde-limao">TROCA GRÁTIS</div>
+                    <div class="divs__facilidades_text">Fique livre para trocar em até 30 dias.</div>
+                </div>
+            </div>
+            <div class="box__facilidade">
+                <div><i class="verde-limao bi bi-flower1 fs-1"></i></div>
+                <div>
+                    <div class="divs__facilidades_text verde-limao icone">SUSTENTABILIDADE</div>
+                    <div class="divs__facilidades_text">Produto responsável, que respeita o meio ambiente.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="div__novidades">
+        <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
+        <form class="input-novidades">
+            <input type="email" id="email" class="input-email" placeholder="Digite seu e-mail"/>
+            <button type="button" class="btn__form-novidades botao-lilas" onclick="enviadoComSucesso()">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="links__footer">
+            <a class="link__redeSocial" href="#"><i class="bi bi-whatsapp"></i></a>
+            <a class="link__redeSocial" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="link__redeSocial" href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+        <div>
+            <p class="card-text">2024 &copy; Desenvolvido por Aline Rodrigues | Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+
+    <div class="preview__produtos" >
+
+        <div class="preview__produtos__card" data-target="p-1">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="assets/produtos/malbec_desodorante-colonia.png" alt="Malbec X Desodorante Colônia 100ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Malbec X Desodorante Colônia 100ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 199,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 179,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-2">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/perfume-thaty.png" alt="Thaty Desodorante Colônia 200ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Thaty Desodorante Colônia 200ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 184,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 184,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-3">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/nativa-spa-lilac-creme-hidratante-corporal.png" alt="Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Loção Renovadora Desodorante Hidratante Corporal Nativa Spa Lilac 400ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 82,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 82,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-4">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/cuide-se-bem-creme-hidratante-framboesa.png" alt="Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Loção Desodorante Hidratante Cuide-se Bem Feira Framboesa 400ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 69,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 69,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-5">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/glos_lab_bubbaloo.png" alt="Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Gloss Labial Rosa Tutti Frutti Bubbaloo 5ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 39,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 39,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-6">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/intense-pop-base-cor-160-sensorial.png" alt="Base Mate Camuflagem Cor 160 Pop! 20ml">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Base Mate Camuflagem Cor 160 Pop! 20ml</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 25,90</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 25,90</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-7">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/kit-maes-floratta-red.png" alt="Kit Presente Dia das Mães Red (3 itens)">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Kit Presente Dia das Mães Red (3 itens)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 284,70</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 284,70</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview__produtos__card" data-target="p-8">
+            <i class="fa-solid fa-times"></i>
+            <img class="imagem-produto" src="./assets/produtos/kit-maes-elysee-nuit-perfume-edp-creme-acetinado.png" alt="Combo Presente Dia das Mães Nuit  (3 itens)">
+            <div class="preview__produtos__card-descricao">
+                <h3 class="preview__card-text">Combo Presente Dia das Mães Nuit  (3 itens)</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="preview__card-produto">
+                    <p class="preview__card-text preco-sem-desconto">R$ 431,70</p>
+                    <p class="preview__card-text preco-com-desconto">R$ 431,70</p>
+                </div>
+                <div class="button">
+                    <a href="#" type="button" id="btn-add" class="preview__btn-produto">Adicionar à sacola</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app/enviadoComSucesso.js"></script>
+    <script src="app/preview.js"></script>
+    <script src="app/slide.js"></script>
+
+</body>
+</html>
