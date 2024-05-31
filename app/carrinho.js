@@ -1,5 +1,5 @@
 let not = document.querySelector('h1');
-let button = document.getElementById('btn-add');
+let button = document.getElementsByClassName('preview__btn-produto');
 
 for (but of button){
     but.addEventListener('click', (e) =>{

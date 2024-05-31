@@ -88,12 +88,13 @@ h1:before{
     content: attr(data-count);
     position: absolute;
     color: var(--white);
+    font-weight: 600;
     right: -16px;
     font-size: 15px;
     text-align: center;
     top: -12px;
     width: 20px;
-    height: 20px;
+    height: 17px;
     background: red;
     border-radius: 50%;
     opacity: 0;
